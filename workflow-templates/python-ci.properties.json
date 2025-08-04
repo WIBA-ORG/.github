@@ -1,0 +1,7 @@
+{
+    "name": "WIBA Python CI/CD",
+    "description": "Standard CI/CD workflow for WIBA Python repositories with testing, linting, and security checks.",
+    "iconName": "python",
+    "categories": ["python", "ci", "testing"],
+    "filePatterns": ["requirements.txt", "setup.py", "pyproject.toml"]
+}

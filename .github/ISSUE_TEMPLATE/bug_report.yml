@@ -1,0 +1,87 @@
+name: Bug Report
+description: Report a bug to help us improve WIBA
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Repository
+      description: Which repository is this bug related to?
+      options:
+        - wiba-platform (Core API)
+        - wiba-python-client (Python SDK)
+        - wiba-models (ML Models)
+        - wiba-web-interface (Frontend)
+        - wiba-infrastructure (DevOps)
+        - wiba-datasets (Data)
+        - wiba-docs (Documentation)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: Tell us what you expected!
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please provide information about your environment
+      placeholder: |
+        - OS: [e.g. Ubuntu 20.04, Windows 10, macOS 12.0]
+        - Python version: [e.g. 3.11.0]
+        - WIBA version: [e.g. 0.2.0]
+        - Browser (if applicable): [e.g. Chrome 91.0]
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here, including logs or screenshots.
+      placeholder: Any additional information that might help us debug this issue.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
