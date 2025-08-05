@@ -35,8 +35,8 @@ jobs:
         
     - name: Update README
       env:
-        GITHUB_TOKEN: ${{ secrets.ORG_README_TOKEN }}
-        GITHUB_ORG: ${{ vars.GITHUB_ORG }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_ORG: WIBA-ORG
       run: |
         python .github/scripts/update-org-readme.py
         

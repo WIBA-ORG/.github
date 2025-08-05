@@ -1,7 +1,7 @@
 # Organization CI/CD Status Dashboard Setup
 
 ## Overview
-This automation creates a dynamic README for your GitHub organization that displays the CI/CD status of all repositories in a table format.
+This automation updates the "Core Repositories" section of your GitHub organization's profile README with live CI/CD status badges for each repository.
 
 ## Setup Instructions
 
@@ -22,15 +22,8 @@ Copy these files to your chosen repository:
 - `update-org-readme.py` - The script that generates the README
 - `.github/workflows/update-org-readme.yml` - The GitHub Action workflow
 
-### 4. Configure GitHub Secrets and Variables
-In your repository settings:
-1. Go to Settings > Secrets and variables > Actions
-2. Add a new secret:
-   - Name: `ORG_README_TOKEN`
-   - Value: Your GitHub token from step 2
-3. Add a new variable:
-   - Name: `GITHUB_ORG`
-   - Value: Your organization name (e.g., `my-org`)
+### 4. Configure GitHub Token
+The workflow uses the default `GITHUB_TOKEN` which is automatically provided by GitHub Actions. No additional secrets configuration is needed since the organization name is hardcoded as `WIBA-ORG`.
 
 ### 5. Enable GitHub Actions
 Ensure GitHub Actions are enabled for your repository.
@@ -88,20 +81,14 @@ python update-org-readme.py
 ```
 
 ## Example Output
-Your README will look like:
+The Core Repositories section will be updated to include CI/CD badges:
 ```markdown
-# my-org CI/CD Status Dashboard
+### **Core Repositories**
 
-*Last updated: 2025-08-05 15:30:00 UTC*
+| Repository | Purpose | Team Ownership | CI/CD Status |
+|------------|---------|----------------|---------------|
+| **[wiba-platform](https://github.com/WIBA-ORG/wiba-platform)** | Core API server & backend | `@backend-team` | [![CI](badge)](link) |
+| **[wiba-web-interface](https://github.com/WIBA-ORG/wiba-web-interface)** | Frontend application | `@frontend-team` | [![Tests](badge)](link) |
 
-## Summary
-- Total Repositories: 25
-- Repositories with CI/CD: 20
-
-## Repository Status
-
-| Repository | Description | CI/CD Status | Last Push |
-|------------|-------------|--------------|-----------|
-| [api-service](https://github.com/my-org/api-service) | Main API service | [![CI](badge)](link) [![Deploy](badge)](link) | 2025-08-05 |
-| [web-app](https://github.com/my-org/web-app) | Frontend application | [![Tests](badge)](link) | 2025-08-04 |
+*CI/CD status last updated: 2025-08-05 15:30:00 UTC*
 ```
