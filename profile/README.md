@@ -1,6 +1,6 @@
-# WIBA-ORG: Collaborative Development Hub
+# WIBA Research Organization
 
-Welcome to the **WIBA (What Is Being Argued?)** research organization! This is your central hub for collaborative development of the argument mining platform.
+The **WIBA (What Is Being Argued?)** research organization at the University of California, Riverside develops an advanced argument mining platform for computational linguistics research. This repository serves as the central hub for collaborative development of our research infrastructure.
 
 ## 🏗️ **Organization Structure**
 
@@ -12,15 +12,27 @@ Our platform is organized into specialized repositories for efficient team colla
 |------------|---------|----------------|---------|
 | **[wiba-platform](https://github.com/WIBA-ORG/wiba-platform)** | Core API server & backend | `@backend-team` | ✅ Production Ready |
 | **[wiba-python-client](https://github.com/WIBA-ORG/wiba-python-client)** | Official Python SDK | `@sdk-team` | ✅ PyPI Ready |
-| **[wiba-models](https://github.com/WIBA-ORG/wiba-models)** | ML models & training | `@ml-team` | ✅ Git LFS Enabled |
-| **[wiba-web-interface](https://github.com/WIBA-ORG/wiba-web-interface)** | Frontend application | `@frontend-team` | 🚧 In Development |
-| **[wiba-infrastructure](https://github.com/WIBA-ORG/wiba-infrastructure)** | DevOps & deployment | `@devops-team` | 🚧 Setup Complete |
+| **[wiba-models](https://github.com/WIBA-ORG/wiba-models)** | ML models & training | `@ml-team` | ✅ Optimized Dependencies |
+| **[wiba-web-interface](https://github.com/WIBA-ORG/wiba-web-interface)** | Frontend application | `@frontend-team` | ✅ Production Ready |
+| **[wiba-infrastructure](https://github.com/WIBA-ORG/wiba-infrastructure)** | DevOps & deployment | `@devops-team` | ✅ Enhanced Monitoring |
 | **[wiba-datasets](https://github.com/WIBA-ORG/wiba-datasets)** | Research data | `@research-team` | ✅ Clean & Organized |
 | **[wiba-docs](https://github.com/WIBA-ORG/wiba-docs)** | Documentation hub | `@docs-team` | 📚 Comprehensive |
+| **[wiba-status](https://github.com/WIBA-ORG/wiba-status)** | System monitoring | `@devops-team` | ✅ Active Monitoring |
 
-## 🚀 **Getting Started**
+## **Research Platform Access**
 
-### **1. Team Onboarding**
+### **Academic Collaboration**
+
+WIBA is a research project at UC Riverside focused on advancing computational argument mining. The platform provides tools for researchers to analyze argumentative text structures.
+
+**Key Services:**
+- **API Platform**: [api.wiba.dev](https://api.wiba.dev)
+- **System Status**: [status.wiba.dev](https://status.wiba.dev)
+- **Documentation**: [docs.wiba.dev](https://docs.wiba.dev)
+
+### **Getting Started**
+
+#### **Team Access**
 
 #### **Join Your Team**
 ```bash
@@ -34,7 +46,7 @@ Our platform is organized into specialized repositories for efficient team colla
 git clone https://github.com/WIBA-ORG/[repository-name].git
 cd [repository-name]
 
-# Set up your development environment
+# Set up your development environment (Python 3.9+ required)
 pip install -r requirements.txt  # Python repos
 npm install                      # Frontend repos
 ```
@@ -106,9 +118,10 @@ Our repositories automatically run comprehensive checks:
 Automated Checks:
 ✅ Code Quality    # black, isort, flake8, mypy
 ✅ Security Scan   # pip-audit, TruffleHog  
-✅ Unit Tests      # pytest across Python 3.8-3.12
+✅ Unit Tests      # pytest across Python 3.9-3.12
 ✅ Integration     # Cross-repository compatibility
 ✅ Build Process   # Deployment artifacts
+✅ Health Checks   # System monitoring and status
 ✅ Documentation   # Link checking, completeness
 ```
 
@@ -153,7 +166,7 @@ python -m src.main  # Start development server
 
 # Development setup:
 cd wiba-models
-pip install torch transformers dspy-ai
+pip install torch transformers dspy-ai  # Optimized dependencies
 python shared/utils/model_loader.py  # Test model loading
 ```
 
@@ -173,18 +186,22 @@ npm run dev  # Start development server
 ```
 
 ### **DevOps Team** (`@devops-team`)
-**Repository:** `wiba-infrastructure`
+**Repositories:** `wiba-infrastructure`, `wiba-status`
 ```bash
 # Key areas of focus:
 - Container orchestration and deployment
-- Monitoring and observability
+- Health monitoring and system status (status.wiba.dev)
 - Infrastructure as code
-- Performance and scaling
+- Performance optimization and scaling
 
 # Development setup:
 cd wiba-infrastructure
 docker-compose -f monitoring/docker-compose.yml up
 terraform plan  # Infrastructure planning
+
+# Status monitoring:
+cd wiba-status
+python -m pytest tests/  # Health check tests
 ```
 
 ## 🔧 **Advanced Workflows**
@@ -368,18 +385,18 @@ Track your team's progress:
 
 ---
 
-## 🌟 **Welcome to Professional Development!**
+## **Research Collaboration**
 
-You're now part of a **world-class development ecosystem** designed for:
+The WIBA platform represents a comprehensive research infrastructure for computational argument mining:
 
-🔥 **High-Velocity Development** - Ship features fast with confidence  
-🛡️ **Quality Assurance** - Automated testing prevents production issues  
-🤝 **Team Collaboration** - Clear ownership and review processes  
-🚀 **Scalable Growth** - Architecture that grows with your team  
-📚 **Knowledge Sharing** - Comprehensive documentation and guides  
+**Research Excellence** - Rigorous methodology with peer-reviewed approaches  
+**Quality Assurance** - Comprehensive testing ensures reliable research tools  
+**Academic Collaboration** - Clear processes for multi-institutional research  
+**Scalable Architecture** - Infrastructure designed for research scalability  
+**Open Science** - Transparent documentation and reproducible methods  
 
-**Happy coding, and welcome to the future of argument mining research!** ✨
+**University of California, Riverside** - Advancing computational linguistics research through innovative argument mining technologies.
 
 ---
 
-*For the latest updates and announcements, watch this organization and enable notifications. Let's build something amazing together!* 🎯
+*For research collaboration inquiries and latest developments, contact airan002@ucr.edu or monitor this organization for updates.*
